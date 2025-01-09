@@ -20,13 +20,14 @@ body,h1,p,ul,li {
 }
 
 .logo img{
-    height: 70px;
+    height: 57px;
+    margin-left: 20px;
 }
 
 .nav_links{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 56px;
     margin: 0;
     flex-grow: 1;
     justify-content: flex-end;
@@ -35,8 +36,8 @@ body,h1,p,ul,li {
 .nav_links a{
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 .cart_icon{
@@ -54,7 +55,8 @@ body,h1,p,ul,li {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 100vh; 
+    width: 1223px;
+    height: 800px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -64,30 +66,33 @@ body,h1,p,ul,li {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 80PX;
     margin-bottom: 20px;
     margin-top: 200px;
 }
 
 .hero p {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 711px;
+    height: 130px;
+    font-size: 24px;
+    margin-left: 255px;
+
 }
 
 .hero_button {
-    background-color: #a0522d;
+    background-color: rgb(148, 74, 74);
     color: white;
+    width: 230px;
+    height: 55px;
     border: none;
-    padding: 10px 20px;
+    margin-top: 31px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 0px;
+    transition: background-color 0.3s ease;
 }
 
 .hero_button:hover {
-    background-color: #8b4513;
+    background-color: rgb(178, 114, 114); 
 }
 
 .continer{
@@ -96,32 +101,31 @@ body,h1,p,ul,li {
 
 .continer h1{
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 90px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 50px;
 }
 
 .product_grid{
+    padding-left: 10px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 20px;
 }
 
 .product_card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product_card:hover{
-    transform: scale(1.05);
+  
 }
 
 .product_card img {
-    width: 100%;
-    height: auto;
+    width: 385px;
+    height: 450px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.product_card img:hover{
+    /* zoom: 1.2; */
+    transition: Scale(1.05);
 }
 
 .product_name {
@@ -130,15 +134,14 @@ body,h1,p,ul,li {
 }
   
 .product_price {
-    font-size: 1rem;
+    font-size: 23px;
     font-weight: bold;
     color: #333;
 }  
 
 .horizontal_line{
     width: 100%;
-    border: 1px solid gray;
-    margin-top: 40px;
+    border: 1px solid rgb(182, 180, 180);
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
@@ -146,56 +149,60 @@ body,h1,p,ul,li {
 }
 
 .new_collection {
+    margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
-    padding: 40px 20px;
     background-color: rgb(231, 231, 231);
 }
 
 .collection_text {
     flex: 1 1 40%;
-    padding: 20px;
+    margin-left: 60px;
     text-align: center;
 }
 
 .collection_text h1 {
-    font-size: 2.5rem;
+    font-size: 50px;
+    text-align: left;
     margin-bottom: 20px;
     margin-top: 150px;
 }
 
 .collection_text p {
-    font-size: 1.2rem;
+    font-size: 17px;
     line-height: 1.6;
-    margin-right: 20;
+    text-align: left;
+    margin-right: 150px;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
 .collection_button {
-    background-color: #b74141;  
+    background-color: rgb(148, 74, 74); 
     color: white;
-    font-size: 15px;
+    font-size: 15px;    
     height: 50px;
     width: 200px;
     border: none;
     cursor: pointer;
+    float: left ;
+    transition: background-color 0.3s ease;
 }
 
 .collection_button:hover{
-    background-color: #a13232;
+    background-color: rgb(178, 114, 114); 
 }
 
 .collection_image {
+    margin-top: 100px;
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    margin-bottom: 100px;
 }
 
 .left-images {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .left-images img,
@@ -203,17 +210,18 @@ body,h1,p,ul,li {
     width: 330px;
     height: 307.5px;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 .right-image img {
-    height: 625px; 
+    height: 634px; 
     width: 330px; 
+    margin-right: 30px;
 }
 
 .Workshop{
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 30px;
+    margin-bottom: 100px;
     margin-right: 30px;
     display: flex;
     max-width: 1200px;
@@ -222,7 +230,7 @@ body,h1,p,ul,li {
 
 .image{
     width: 100%;
-    height: 500px;
+    height: 560px;
     object-fit: cover;
 }
 
@@ -237,28 +245,31 @@ body,h1,p,ul,li {
 .workshop_text h1{
     font-size: 3rem;
     margin-bottom: 10px;
+    margin-left: 50px;
 }
 
 .workshop_text p{
-    font-size: 1.2rem;
+    font-size: 17px;
+    margin-left: 50px;
     margin-bottom: 20px;
-    text-align: justify;
     line-height: 1.6;
 }
 
 .Workshop button{
     padding: 10px 20px;
-    background-color: #b74141;
+    margin-left: 50px;
+    background-color: rgb(148, 74, 74);
     color: white;
     border: none;
     font-size: 1rem;
     cursor: pointer;
     height: 50px;
     width: 150px;
+    transition: background-color 0.3s ease;
 }
 
 .Workshop button:hover{
-    background-color: #a13232;
+    background-color: rgb(178, 114, 114); 
 }
 
 .employe_section{
@@ -269,14 +280,15 @@ body,h1,p,ul,li {
 }
 
 .employe_section h1{
-    size: 36px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 90px;
 }
 
 .team_container{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 70px;
     flex-wrap: wrap;
 }
 
@@ -295,13 +307,15 @@ body,h1,p,ul,li {
 }
   
 .team_member h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 100;
 }
   
 .team_member p {
-    font-size: 14px;
+    font-size: 17px;
     color: #666;
+    margin-bottom: 100px;
 }
 
 .gallery {
@@ -351,7 +365,7 @@ body,h1,p,ul,li {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(image/history.webp);
     background-size: 110;
     background-position: 75% 75%;
-    height: 100vh;
+    height: auto;
     justify-content: left;
     align-items: baseline;
     text-align: left;
@@ -361,13 +375,15 @@ body,h1,p,ul,li {
 
 .ourstory h1 {
     font-size: 3rem;
-    margin-top: 40px;
+    margin-left: 50px;
+    margin-top: 230px;
 
 }
 
 .ourstory p {
     font-size: 1.1rem;
-    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-bottom: 450px;
     margin-right: 800px;
     
 }
