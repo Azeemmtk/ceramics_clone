@@ -2,7 +2,7 @@ body,h1,p,ul,li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    justify-content: center;
+    /* justify-content: center; */
     font-family: 'Kumbh Sans', sans-serif;
 }
 .navbar{
@@ -111,7 +111,7 @@ body,h1,p,ul,li {
     display: flex;
     /* justify-content: center; */
     gap: 20px;
-}
+}   
 
 .product_card img {
     width: 385px;
